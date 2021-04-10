@@ -1,0 +1,6 @@
+<h1>Edit Student</h1>
+<form>
+  <input name="name" [(ngModel)]="student.name">
+  <input name="address" [(ngModel)]="student.address" >
+  <input type="submit" (click)="update()" value="Edit">
+</form>

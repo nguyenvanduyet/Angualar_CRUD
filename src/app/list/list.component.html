@@ -1,0 +1,19 @@
+<p>list works!</p>
+<a [routerLink]="'create'" >tạo mới</a>
+<table>
+  <tr>
+    <td>name</td>
+    <td>address</td>
+  </tr>
+  <tr *ngFor="let s of students">
+    <td></td>
+    <td >{{s.name}}</td>
+    <td >{{s.address}}</td>
+    <td>
+      <a [routerLink]="'edit/'+ s.id">Edit</a>
+    </td>
+    <td>
+      <a [routerLink]="'delete/'+s.id" >Delete</a>
+    </td>
+  </tr>
+</table>
